@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Humanitarians Without Borders</title>
-  <meta name="description" content="Building stronger multicultural communities across Victoria. We partner with emerging and established community groups to provide governance support, capacity building, youth programs and humanitarian services." />
+  <meta name="description"
+    content="Building stronger multicultural communities across Victoria. We partner with emerging and established community groups to provide governance support, capacity building, youth programs and humanitarian services." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap"
+    rel="stylesheet" />
   <style>
     /* ─── Reset & Base ─────────────────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --brand-primary:   #0D7A7A;   /* deep teal   */
-      --brand-secondary: #E8614A;   /* warm coral  */
-      --brand-accent:    #3BBFB2;   /* soft mint   */
-      --brand-dark:      #062B2B;   /* deep forest  */
-      --brand-light:     #F0FAFA;   /* pale teal    */
-      --text-dark:       #112020;
-      --text-mid:        #3D5454;
-      --text-light:      #6B8888;
-      --white:           #FFFFFF;
-      --border:          #D4ECEC;
-      --radius-sm:       8px;
-      --radius-md:       16px;
-      --radius-lg:       24px;
-      --shadow-sm:       0 2px 8px rgba(0,0,0,.08);
-      --shadow-md:       0 8px 32px rgba(0,0,0,.12);
-      --shadow-lg:       0 20px 60px rgba(0,0,0,.15);
-      --transition:      .25s cubic-bezier(.4,0,.2,1);
-      --max-width:       1200px;
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html { scroll-behavior: smooth; }
+    :root {
+      --brand-primary: #0D7A7A;
+      /* deep teal   */
+      --brand-secondary: #E8614A;
+      /* warm coral  */
+      --brand-accent: #3BBFB2;
+      /* soft mint   */
+      --brand-dark: #062B2B;
+      /* deep forest  */
+      --brand-light: #F0FAFA;
+      /* pale teal    */
+      --text-dark: #112020;
+      --text-mid: #3D5454;
+      --text-light: #6B8888;
+      --white: #FFFFFF;
+      --border: #D4ECEC;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, .08);
+      --shadow-md: 0 8px 32px rgba(0, 0, 0, .12);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, .15);
+      --transition: .25s cubic-bezier(.4, 0, .2, 1);
+      --max-width: 1200px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'DM Sans', sans-serif;
@@ -44,10 +61,24 @@
     }
 
     /* ─── Utility ──────────────────────────────────────────────────────────── */
-    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
-    .section    { padding: 96px 0; }
-    .section--alt { background: var(--brand-light); }
-    .section--dark { background: var(--brand-dark); color: var(--white); }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 96px 0;
+    }
+
+    .section--alt {
+      background: var(--brand-light);
+    }
+
+    .section--dark {
+      background: var(--brand-dark);
+      color: var(--white);
+    }
 
     .tag {
       display: inline-block;
@@ -69,7 +100,9 @@
       margin-bottom: 16px;
     }
 
-    .section-title--white { color: var(--white); }
+    .section-title--white {
+      color: var(--white);
+    }
 
     .section-lead {
       font-size: 1.125rem;
@@ -78,7 +111,9 @@
       line-height: 1.75;
     }
 
-    .section-lead--white { color: rgba(255,255,255,.75); }
+    .section-lead--white {
+      color: rgba(255, 255, 255, .75);
+    }
 
     .btn {
       display: inline-flex;
@@ -105,7 +140,7 @@
       background: var(--brand-dark);
       border-color: var(--brand-dark);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(13,122,122,.35);
+      box-shadow: 0 8px 24px rgba(13, 122, 122, .35);
     }
 
     .btn-secondary {
@@ -118,17 +153,17 @@
       background: #c94832;
       border-color: #c94832;
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(232,97,74,.35);
+      box-shadow: 0 8px 24px rgba(232, 97, 74, .35);
     }
 
     .btn-outline {
       background: transparent;
       color: var(--white);
-      border-color: rgba(255,255,255,.6);
+      border-color: rgba(255, 255, 255, .6);
     }
 
     .btn-outline:hover {
-      background: rgba(255,255,255,.15);
+      background: rgba(255, 255, 255, .15);
       border-color: var(--white);
     }
 
@@ -145,14 +180,16 @@
     /* ─── Navigation ───────────────────────────────────────────────────────── */
     .nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 1000;
       padding: 0 24px;
       transition: var(--transition);
     }
 
     .nav.scrolled {
-      background: rgba(255,255,255,.97);
+      background: rgba(255, 255, 255, .97);
       backdrop-filter: blur(20px);
       box-shadow: var(--shadow-sm);
     }
@@ -174,7 +211,8 @@
     }
 
     .nav__logo-icon {
-      width: 44px; height: 44px;
+      width: 44px;
+      height: 44px;
       background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
       border-radius: 12px;
       display: flex;
@@ -203,8 +241,13 @@
       text-transform: uppercase;
     }
 
-    .nav.transparent .nav__logo-text strong { color: var(--white); }
-    .nav.transparent .nav__logo-text span   { color: rgba(255,255,255,.6); }
+    .nav.transparent .nav__logo-text strong {
+      color: var(--white);
+    }
+
+    .nav.transparent .nav__logo-text span {
+      color: rgba(255, 255, 255, .6);
+    }
 
     .nav__links {
       display: flex;
@@ -221,11 +264,23 @@
       transition: var(--transition);
     }
 
-    .nav__links a:hover { color: var(--brand-primary); }
-    .nav.transparent .nav__links a { color: rgba(255,255,255,.85); }
-    .nav.transparent .nav__links a:hover { color: var(--white); }
+    .nav__links a:hover {
+      color: var(--brand-primary);
+    }
 
-    .nav__cta { display: flex; gap: 12px; align-items: center; }
+    .nav.transparent .nav__links a {
+      color: rgba(255, 255, 255, .85);
+    }
+
+    .nav.transparent .nav__links a:hover {
+      color: var(--white);
+    }
+
+    .nav__cta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
 
     .nav__hamburger {
       display: none;
@@ -238,14 +293,17 @@
     }
 
     .nav__hamburger span {
-      width: 24px; height: 2px;
+      width: 24px;
+      height: 2px;
       background: var(--brand-dark);
       border-radius: 2px;
       transition: var(--transition);
       display: block;
     }
 
-    .nav.transparent .nav__hamburger span { background: var(--white); }
+    .nav.transparent .nav__hamburger span {
+      background: var(--white);
+    }
 
     /* ─── Hero ─────────────────────────────────────────────────────────────── */
     .hero {
@@ -267,12 +325,10 @@
     .hero__gradient {
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        135deg,
-        rgba(6,43,43,.95) 0%,
-        rgba(13,122,122,.85) 50%,
-        rgba(59,191,178,.55) 100%
-      );
+      background: linear-gradient(135deg,
+          rgba(6, 43, 43, .95) 0%,
+          rgba(13, 122, 122, .85) 50%,
+          rgba(59, 191, 178, .55) 100%);
     }
 
     .hero__shapes {
@@ -285,12 +341,30 @@
     .hero__circle {
       position: absolute;
       border-radius: 50%;
-      background: rgba(255,255,255,.04);
+      background: rgba(255, 255, 255, .04);
     }
 
-    .hero__circle--1 { width: 600px; height: 600px; top: -200px; right: -100px; }
-    .hero__circle--2 { width: 300px; height: 300px; bottom: 50px; left: -80px; }
-    .hero__circle--3 { width: 150px; height: 150px; top: 40%; right: 15%; background: rgba(232,97,74,.08); }
+    .hero__circle--1 {
+      width: 600px;
+      height: 600px;
+      top: -200px;
+      right: -100px;
+    }
+
+    .hero__circle--2 {
+      width: 300px;
+      height: 300px;
+      bottom: 50px;
+      left: -80px;
+    }
+
+    .hero__circle--3 {
+      width: 150px;
+      height: 150px;
+      top: 40%;
+      right: 15%;
+      background: rgba(232, 97, 74, .08);
+    }
 
     .hero__content {
       position: relative;
@@ -305,14 +379,16 @@
       width: 100%;
     }
 
-    .hero__text { color: var(--white); }
+    .hero__text {
+      color: var(--white);
+    }
 
     .hero__badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(232,97,74,.18);
-      border: 1px solid rgba(232,97,74,.38);
+      background: rgba(232, 97, 74, .18);
+      border: 1px solid rgba(232, 97, 74, .38);
       color: var(--brand-secondary);
       font-size: .8rem;
       font-weight: 600;
@@ -340,7 +416,7 @@
 
     .hero__subtitle {
       font-size: 1.125rem;
-      color: rgba(255,255,255,.8);
+      color: rgba(255, 255, 255, .8);
       line-height: 1.75;
       margin-bottom: 40px;
       max-width: 500px;
@@ -352,7 +428,9 @@
       flex-wrap: wrap;
     }
 
-    .hero__visual { position: relative; }
+    .hero__visual {
+      position: relative;
+    }
 
     .hero__photo-stack {
       position: relative;
@@ -374,20 +452,26 @@
     }
 
     .hero__photo--main {
-      width: 320px; height: 360px;
-      top: 20px; left: 20px;
+      width: 320px;
+      height: 360px;
+      top: 20px;
+      left: 20px;
       z-index: 2;
     }
 
     .hero__photo--secondary {
-      width: 220px; height: 260px;
-      top: 0; right: 0;
+      width: 220px;
+      height: 260px;
+      top: 0;
+      right: 0;
       z-index: 1;
     }
 
     .hero__photo--tertiary {
-      width: 200px; height: 180px;
-      bottom: 0; left: 40px;
+      width: 200px;
+      height: 180px;
+      bottom: 0;
+      left: 40px;
       z-index: 3;
     }
 
@@ -400,8 +484,15 @@
       z-index: 10;
     }
 
-    .hero__stat-card--1 { bottom: 60px; right: -20px; }
-    .hero__stat-card--2 { top: -10px; left: -30px; }
+    .hero__stat-card--1 {
+      bottom: 60px;
+      right: -20px;
+    }
+
+    .hero__stat-card--2 {
+      top: -10px;
+      left: -30px;
+    }
 
     .hero__stat-number {
       font-size: 1.75rem;
@@ -427,7 +518,7 @@
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      color: rgba(255,255,255,.6);
+      color: rgba(255, 255, 255, .6);
       font-size: .75rem;
       font-weight: 500;
       text-transform: uppercase;
@@ -437,13 +528,22 @@
     .hero__scroll-line {
       width: 1px;
       height: 40px;
-      background: linear-gradient(to bottom, rgba(59,191,178,.7), transparent);
+      background: linear-gradient(to bottom, rgba(59, 191, 178, .7), transparent);
       animation: scrollLine 2s ease-in-out infinite;
     }
 
     @keyframes scrollLine {
-      0%, 100% { opacity: 1; transform: scaleY(1); }
-      50%       { opacity: .3; transform: scaleY(.5); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+
+      50% {
+        opacity: .3;
+        transform: scaleY(.5);
+      }
     }
 
     /* ─── Stats Bar ─────────────────────────────────────────────────────────── */
@@ -476,7 +576,7 @@
 
     .stats-bar__label {
       font-size: .875rem;
-      color: rgba(255,255,255,.75);
+      color: rgba(255, 255, 255, .75);
       margin-top: 8px;
       font-weight: 500;
     }
@@ -507,13 +607,34 @@
       object-fit: cover;
     }
 
-    .about__photo--1 { width: 280px; height: 360px; top: 0; left: 0; z-index: 2; }
-    .about__photo--2 { width: 240px; height: 300px; top: 60px; right: 0; z-index: 1; }
-    .about__photo--3 { width: 220px; height: 200px; bottom: 0; left: 50px; z-index: 3; }
+    .about__photo--1 {
+      width: 280px;
+      height: 360px;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .about__photo--2 {
+      width: 240px;
+      height: 300px;
+      top: 60px;
+      right: 0;
+      z-index: 1;
+    }
+
+    .about__photo--3 {
+      width: 220px;
+      height: 200px;
+      bottom: 0;
+      left: 50px;
+      z-index: 3;
+    }
 
     .about__accent {
       position: absolute;
-      width: 120px; height: 120px;
+      width: 120px;
+      height: 120px;
       background: var(--brand-secondary);
       border-radius: 50%;
       bottom: 40px;
@@ -553,8 +674,14 @@
       border-left: 4px solid var(--brand-primary);
     }
 
-    .mvv-card--accent { border-left-color: var(--brand-accent); }
-    .mvv-card--full { grid-column: 1 / -1; border-left-color: var(--brand-secondary); }
+    .mvv-card--accent {
+      border-left-color: var(--brand-accent);
+    }
+
+    .mvv-card--full {
+      grid-column: 1 / -1;
+      border-left-color: var(--brand-secondary);
+    }
 
     .mvv-card__label {
       font-size: .75rem;
@@ -565,10 +692,19 @@
       margin-bottom: 8px;
     }
 
-    .mvv-card--accent .mvv-card__label { color: var(--brand-accent); }
-    .mvv-card--full   .mvv-card__label { color: var(--brand-secondary); }
+    .mvv-card--accent .mvv-card__label {
+      color: var(--brand-accent);
+    }
 
-    .mvv-card p { font-size: .9375rem; color: var(--text-mid); line-height: 1.65; }
+    .mvv-card--full .mvv-card__label {
+      color: var(--brand-secondary);
+    }
+
+    .mvv-card p {
+      font-size: .9375rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
 
     /* ─── Services / What We Do ─────────────────────────────────────────────── */
     .services__header {
@@ -577,11 +713,13 @@
       margin: 0 auto 64px;
     }
 
-    .services__header .section-lead { margin: 0 auto; }
+    .services__header .section-lead {
+      margin: 0 auto;
+    }
 
     .services__grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 32px;
     }
 
@@ -607,7 +745,8 @@
     }
 
     .service-card__icon {
-      width: 64px; height: 64px;
+      width: 64px;
+      height: 64px;
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
@@ -615,11 +754,22 @@
       font-size: 1.75rem;
     }
 
-    .service-card__icon--blue  { background: rgba(13,122,122,.1); }
-    .service-card__icon--green { background: rgba(59,191,178,.15); }
-    .service-card__icon--amber { background: rgba(232,97,74,.1); }
+    .service-card__icon--blue {
+      background: rgba(13, 122, 122, .1);
+    }
 
-    .service-card__body { padding: 24px 36px 36px; flex: 1; }
+    .service-card__icon--green {
+      background: rgba(59, 191, 178, .15);
+    }
+
+    .service-card__icon--amber {
+      background: rgba(232, 97, 74, .1);
+    }
+
+    .service-card__body {
+      padding: 24px 36px 36px;
+      flex: 1;
+    }
 
     .service-card__title {
       font-size: 1.25rem;
@@ -652,7 +802,8 @@
 
     .service-card__list li::before {
       content: '✓';
-      width: 20px; height: 20px;
+      width: 20px;
+      height: 20px;
       min-width: 20px;
       border-radius: 50%;
       background: var(--brand-accent);
@@ -752,15 +903,15 @@
     }
 
     .impact-card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
       border-radius: var(--radius-lg);
       padding: 40px;
       transition: var(--transition);
     }
 
     .impact-card:hover {
-      background: rgba(255,255,255,.1);
+      background: rgba(255, 255, 255, .1);
       transform: translateY(-4px);
     }
 
@@ -783,7 +934,7 @@
 
     .impact-card__desc {
       font-size: .9rem;
-      color: rgba(255,255,255,.6);
+      color: rgba(255, 255, 255, .6);
       line-height: 1.65;
     }
 
@@ -825,7 +976,8 @@
     }
 
     .partner-card__icon {
-      width: 56px; height: 56px;
+      width: 56px;
+      height: 56px;
       border-radius: var(--radius-sm);
       background: var(--brand-light);
       display: flex;
@@ -867,8 +1019,13 @@
       cursor: pointer;
     }
 
-    .gallery__item:nth-child(1) { grid-column: 1 / 3; }
-    .gallery__item:nth-child(4) { grid-column: 2 / 4; }
+    .gallery__item:nth-child(1) {
+      grid-column: 1 / 3;
+    }
+
+    .gallery__item:nth-child(4) {
+      grid-column: 2 / 4;
+    }
 
     .gallery__item img {
       width: 100%;
@@ -879,14 +1036,18 @@
     }
 
     .gallery__item:nth-child(1) img,
-    .gallery__item:nth-child(4) img { height: 340px; }
+    .gallery__item:nth-child(4) img {
+      height: 340px;
+    }
 
-    .gallery__item:hover img { transform: scale(1.04); }
+    .gallery__item:hover img {
+      transform: scale(1.04);
+    }
 
     .gallery__overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(6,43,43,.75) 0%, transparent 60%);
+      background: linear-gradient(to top, rgba(6, 43, 43, .75) 0%, transparent 60%);
       opacity: 0;
       transition: var(--transition);
       display: flex;
@@ -897,7 +1058,9 @@
       font-size: .9rem;
     }
 
-    .gallery__item:hover .gallery__overlay { opacity: 1; }
+    .gallery__item:hover .gallery__overlay {
+      opacity: 1;
+    }
 
     /* ─── Contact ─────────────────────────────────────────────────────────────── */
     .contact__cards {
@@ -925,7 +1088,8 @@
     }
 
     .contact__card-icon {
-      width: 56px; height: 56px;
+      width: 56px;
+      height: 56px;
       border-radius: var(--radius-sm);
       background: var(--brand-light);
       display: flex;
@@ -980,7 +1144,9 @@
       min-width: 40px;
     }
 
-    .contact__reg-text { flex: 1; }
+    .contact__reg-text {
+      flex: 1;
+    }
 
     .contact__reg-label {
       font-size: .7rem;
@@ -1019,18 +1185,24 @@
 
     .contact__cta-strip p {
       font-size: .9375rem;
-      color: rgba(255,255,255,.75);
+      color: rgba(255, 255, 255, .75);
     }
 
     @media (max-width: 768px) {
-      .contact__cards { grid-template-columns: 1fr; }
-      .contact__cta-strip { flex-direction: column; text-align: center; }
+      .contact__cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact__cta-strip {
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
     /* ─── Footer ─────────────────────────────────────────────────────────────── */
     footer {
       background: #060f18;
-      color: rgba(255,255,255,.7);
+      color: rgba(255, 255, 255, .7);
       padding: 80px 24px 40px;
     }
 
@@ -1041,7 +1213,7 @@
       grid-template-columns: 2fr 1fr 1fr 1fr;
       gap: 60px;
       padding-bottom: 64px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
     }
 
     .footer__brand p {
@@ -1070,12 +1242,14 @@
 
     .footer__col-links a {
       text-decoration: none;
-      color: rgba(255,255,255,.55);
+      color: rgba(255, 255, 255, .55);
       font-size: .875rem;
       transition: var(--transition);
     }
 
-    .footer__col-links a:hover { color: var(--white); }
+    .footer__col-links a:hover {
+      color: var(--white);
+    }
 
     .footer__bottom {
       max-width: var(--max-width);
@@ -1099,7 +1273,9 @@
       gap: 8px;
     }
 
-    .mobile-nav.open { display: flex; }
+    .mobile-nav.open {
+      display: flex;
+    }
 
     .mobile-nav a {
       font-size: 1.5rem;
@@ -1107,59 +1283,180 @@
       color: var(--white);
       text-decoration: none;
       padding: 16px 0;
-      border-bottom: 1px solid rgba(255,255,255,.1);
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
       transition: var(--transition);
     }
 
-    .mobile-nav a:hover { color: var(--brand-secondary); padding-left: 12px; }
+    .mobile-nav a:hover {
+      color: var(--brand-secondary);
+      padding-left: 12px;
+    }
 
-    .mobile-nav .btn { margin-top: 24px; text-align: center; justify-content: center; }
+    .mobile-nav .btn {
+      margin-top: 24px;
+      text-align: center;
+      justify-content: center;
+    }
 
     /* ─── Responsive ─────────────────────────────────────────────────────────── */
     @media (max-width: 1024px) {
-      .hero__content    { grid-template-columns: 1fr; gap: 48px; }
-      .hero__visual     { display: none; }
-      .hero__content    { padding-top: 140px; }
-      .hero__title      { font-size: 2.75rem; }
-      .about__grid      { grid-template-columns: 1fr; }
-      .about__photos    { display: none; }
-      .services__grid   { grid-template-columns: 1fr 1fr; }
-      .care__grid       { grid-template-columns: 1fr; }
-      .care__image      { display: none; }
-      .partners__grid   { grid-template-columns: repeat(2, 1fr); }
-      .gallery__grid    { grid-template-columns: 1fr 1fr; }
-      .gallery__item:nth-child(1) { grid-column: 1 / -1; }
-      .gallery__item:nth-child(4) { grid-column: 1 / -1; }
-      .contact__grid    { grid-template-columns: 1fr; }
-      .footer__grid     { grid-template-columns: 1fr 1fr; }
+      .hero__content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero__visual {
+        display: none;
+      }
+
+      .hero__content {
+        padding-top: 140px;
+      }
+
+      .hero__title {
+        font-size: 2.75rem;
+      }
+
+      .about__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about__photos {
+        display: none;
+      }
+
+      .services__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .care__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .care__image {
+        display: none;
+      }
+
+      .partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery__item:nth-child(1) {
+        grid-column: 1 / -1;
+      }
+
+      .gallery__item:nth-child(4) {
+        grid-column: 1 / -1;
+      }
+
+      .contact__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (max-width: 768px) {
-      .section { padding: 64px 0; }
-      .nav__links  { display: none; }
-      .nav__cta    { display: none; }
-      .nav__hamburger { display: flex; }
-      .stats-bar__grid  { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-      .services__grid   { grid-template-columns: 1fr; }
-      .impact__grid     { grid-template-columns: 1fr; }
-      .partners__grid   { grid-template-columns: repeat(2, 1fr); }
-      .gallery__grid    { grid-template-columns: 1fr; }
-      .gallery__item:nth-child(1) { grid-column: 1; }
-      .gallery__item:nth-child(4) { grid-column: 1; }
-      .contact__form-card { padding: 32px 24px; }
-      .form-row     { grid-template-columns: 1fr; }
-      .footer__grid { grid-template-columns: 1fr; gap: 40px; }
-      .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
-      .mvv-grid { grid-template-columns: 1fr; }
-      .mvv-card--full { grid-column: 1; }
+      .section {
+        padding: 64px 0;
+      }
+
+      .nav__links {
+        display: none;
+      }
+
+      .nav__cta {
+        display: none;
+      }
+
+      .nav__hamburger {
+        display: flex;
+      }
+
+      .stats-bar__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .services__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .impact__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery__item:nth-child(1) {
+        grid-column: 1;
+      }
+
+      .gallery__item:nth-child(4) {
+        grid-column: 1;
+      }
+
+      .contact__form-card {
+        padding: 32px 24px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer__bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .mvv-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mvv-card--full {
+        grid-column: 1;
+      }
     }
 
     @media (max-width: 480px) {
-      .hero__title  { font-size: 2.25rem; }
-      .hero__actions { flex-direction: column; }
-      .hero__actions .btn { text-align: center; justify-content: center; }
-      .stats-bar__grid { grid-template-columns: 1fr 1fr; }
-      .stats-bar__number { font-size: 2rem; }
+      .hero__title {
+        font-size: 2.25rem;
+      }
+
+      .hero__actions {
+        flex-direction: column;
+      }
+
+      .hero__actions .btn {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .stats-bar__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stats-bar__number {
+        font-size: 2rem;
+      }
     }
 
     /* ─── Animations ──────────────────────────────────────────────────────────── */
@@ -1174,664 +1471,708 @@
       transform: translateY(0);
     }
 
-    [data-aos][data-aos-delay="100"] { transition-delay: .1s; }
-    [data-aos][data-aos-delay="200"] { transition-delay: .2s; }
-    [data-aos][data-aos-delay="300"] { transition-delay: .3s; }
-    [data-aos][data-aos-delay="400"] { transition-delay: .4s; }
+    [data-aos][data-aos-delay="100"] {
+      transition-delay: .1s;
+    }
+
+    [data-aos][data-aos-delay="200"] {
+      transition-delay: .2s;
+    }
+
+    [data-aos][data-aos-delay="300"] {
+      transition-delay: .3s;
+    }
+
+    [data-aos][data-aos-delay="400"] {
+      transition-delay: .4s;
+    }
   </style>
 </head>
+
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      NAVIGATION
 ════════════════════════════════════════════════════════════════════ -->
-<nav class="nav transparent" id="mainNav" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="#home" class="nav__logo" aria-label="Humanitarians Without Borders - Home">
-      <div class="nav__logo-icon" aria-hidden="true">🌏</div>
-      <div class="nav__logo-text">
-        <strong>Humanitarians Without Borders</strong>
-        <span>Victoria, Australia</span>
+  <nav class="nav transparent" id="mainNav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Humanitarians Without Borders - Home">
+        <div class="nav__logo-icon" aria-hidden="true">🌏</div>
+        <div class="nav__logo-text">
+          <strong>Humanitarians Without Borders</strong>
+          <span>Victoria, Australia</span>
+        </div>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#community-care">Community Care</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__cta">
+        <a href="#contact" class="btn btn-secondary">Get Involved</a>
       </div>
-    </a>
 
-    <ul class="nav__links" role="list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#community-care">Community Care</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav__cta">
-      <a href="#contact" class="btn btn-secondary">Get Involved</a>
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#programs" onclick="closeMobileNav()">Programs</a>
+    <a href="#community-care" onclick="closeMobileNav()">Community Care</a>
+    <a href="#impact" onclick="closeMobileNav()">Impact</a>
+    <a href="#partners" onclick="closeMobileNav()">Partners</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="#contact" class="btn btn-secondary" onclick="closeMobileNav()">Get Involved</a>
   </div>
-</nav>
 
-<!-- Mobile Nav -->
-<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-  <a href="#about"          onclick="closeMobileNav()">About</a>
-  <a href="#programs"       onclick="closeMobileNav()">Programs</a>
-  <a href="#community-care" onclick="closeMobileNav()">Community Care</a>
-  <a href="#impact"         onclick="closeMobileNav()">Impact</a>
-  <a href="#partners"       onclick="closeMobileNav()">Partners</a>
-  <a href="#contact"        onclick="closeMobileNav()">Contact</a>
-  <a href="#contact" class="btn btn-secondary" onclick="closeMobileNav()">Get Involved</a>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════════════════════ -->
-<section class="hero" id="home" aria-label="Hero">
-  <div class="hero__bg" aria-hidden="true"></div>
-  <div class="hero__gradient" aria-hidden="true"></div>
-  <div class="hero__shapes" aria-hidden="true">
-    <div class="hero__circle hero__circle--1"></div>
-    <div class="hero__circle hero__circle--2"></div>
-    <div class="hero__circle hero__circle--3"></div>
-  </div>
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="hero__shapes" aria-hidden="true">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__circle hero__circle--3"></div>
+    </div>
 
-  <div class="hero__content">
-    <div class="hero__text">
-      <div class="hero__badge" role="text">
-        <span>🌱</span> Victoria, Australia
+    <div class="hero__content">
+      <div class="hero__text">
+        <div class="hero__badge" role="text">
+          <span>🌱</span> Victoria, Australia
+        </div>
+        <h1 class="hero__title">
+          Building Stronger<br>
+          <em>Multicultural</em><br>
+          Communities
+        </h1>
+        <p class="hero__subtitle">
+          Since 2017, our team of dedicated volunteers has partnered with emerging and established community groups —
+          providing governance support, capacity building, youth programs and humanitarian services that help families
+          thrive across Victoria.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn-secondary">Partner With Us</a>
+          <a href="#programs" class="btn btn-outline">Our Programs</a>
+          <a href="#community-care" class="btn btn-outline">Get Support</a>
+        </div>
       </div>
-      <h1 class="hero__title">
-        Building Stronger<br>
-        <em>Multicultural</em><br>
-        Communities
-      </h1>
-      <p class="hero__subtitle">
-        Since 2017, our team of dedicated volunteers has partnered with emerging and established community groups — providing governance support, capacity building, youth programs and humanitarian services that help families thrive across Victoria.
-      </p>
-      <div class="hero__actions">
-        <a href="#contact"  class="btn btn-secondary">Partner With Us</a>
-        <a href="#programs" class="btn btn-outline">Our Programs</a>
-        <a href="#community-care" class="btn btn-outline">Get Support</a>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__photo-stack">
+          <div class="hero__photo hero__photo--main">
+            <img src="IMG_6065.jpg" alt="Community team members wrapping Christmas gifts together" loading="eager" />
+          </div>
+          <div class="hero__photo hero__photo--secondary">
+            <img src="IMG_6064.jpg" alt="Team members holding wrapped Christmas gifts" loading="eager" />
+          </div>
+          <div class="hero__photo hero__photo--tertiary">
+            <img src="IMG_6063.jpg" alt="Large collection of wrapped Christmas gifts" loading="eager" />
+          </div>
+          <div class="hero__stat-card hero__stat-card--1">
+            <div class="hero__stat-number">100+</div>
+            <div class="hero__stat-label">Families supported annually</div>
+          </div>
+          <div class="hero__stat-card hero__stat-card--2">
+            <div class="hero__stat-number">🌏</div>
+            <div class="hero__stat-label">Multiple cultural communities</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__photo-stack">
-        <div class="hero__photo hero__photo--main">
-          <img src="IMG_6065.jpg" alt="Community team members wrapping Christmas gifts together" loading="eager" />
-        </div>
-        <div class="hero__photo hero__photo--secondary">
-          <img src="IMG_6064.jpg" alt="Team members holding wrapped Christmas gifts" loading="eager" />
-        </div>
-        <div class="hero__photo hero__photo--tertiary">
-          <img src="IMG_6063.jpg" alt="Large collection of wrapped Christmas gifts" loading="eager" />
-        </div>
-        <div class="hero__stat-card hero__stat-card--1">
-          <div class="hero__stat-number">100+</div>
-          <div class="hero__stat-label">Families supported annually</div>
-        </div>
-        <div class="hero__stat-card hero__stat-card--2">
-          <div class="hero__stat-number">🌏</div>
-          <div class="hero__stat-label">Multiple cultural communities</div>
-        </div>
-      </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
     </div>
-  </div>
+  </section>
 
-  <div class="hero__scroll" aria-hidden="true">
-    <div class="hero__scroll-line"></div>
-    <span>Scroll</span>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      STATS BAR
 ════════════════════════════════════════════════════════════════════ -->
-<div class="stats-bar" aria-label="Key statistics">
-  <div class="stats-bar__grid">
-    <div class="stats-bar__item" data-aos>
-      <div class="stats-bar__number" aria-label="Established 2017">2017</div>
-      <div class="stats-bar__label">Year Established</div>
-    </div>
-    <div class="stats-bar__item" data-aos data-aos-delay="100">
-      <div class="stats-bar__number" aria-label="More than 100">100+</div>
-      <div class="stats-bar__label">Migrant Families Supported Annually</div>
-    </div>
-    <div class="stats-bar__item" data-aos data-aos-delay="200">
-      <div class="stats-bar__number">6+</div>
-      <div class="stats-bar__label">Core Volunteers &amp; Extended Network</div>
-    </div>
-    <div class="stats-bar__item" data-aos data-aos-delay="300">
-      <div class="stats-bar__number">3+</div>
-      <div class="stats-bar__label">Program Areas Across Western Victoria</div>
+  <div class="stats-bar" aria-label="Key statistics">
+    <div class="stats-bar__grid">
+      <div class="stats-bar__item" data-aos>
+        <div class="stats-bar__number" aria-label="Established 2017">2017</div>
+        <div class="stats-bar__label">Year Established</div>
+      </div>
+      <div class="stats-bar__item" data-aos data-aos-delay="100">
+        <div class="stats-bar__number" aria-label="More than 100">100+</div>
+        <div class="stats-bar__label">Migrant Families Supported Annually</div>
+      </div>
+      <div class="stats-bar__item" data-aos data-aos-delay="200">
+        <div class="stats-bar__number">6+</div>
+        <div class="stats-bar__label">Core Volunteers &amp; Extended Network</div>
+      </div>
+      <div class="stats-bar__item" data-aos data-aos-delay="300">
+        <div class="stats-bar__number">3+</div>
+        <div class="stats-bar__label">Program Areas Across Western Victoria</div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      ABOUT
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section" id="about" aria-labelledby="about-heading">
-  <div class="container">
-    <div class="about__grid">
-      <!-- Photo collage (hidden on mobile) -->
-      <div class="about__photos" aria-hidden="true">
-        <div class="about__photo about__photo--1">
-          <img src="IMG_6065.jpg" alt="Community volunteers wrapping gifts" loading="lazy" />
-        </div>
-        <div class="about__photo about__photo--2">
-          <img src="IMG_6064.jpg" alt="Team posing with wrapped gifts" loading="lazy" />
-        </div>
-        <div class="about__photo about__photo--3">
-          <img src="IMG_6062.jpg" alt="Stack of wrapped Christmas presents" loading="lazy" />
-        </div>
-        <div class="about__accent" aria-hidden="true"></div>
-      </div>
-
-      <!-- Text content -->
-      <div>
-        <span class="tag">Who We Are</span>
-        <h2 class="section-title" id="about-heading">A Community Organisation Built for Communities</h2>
-        <p class="section-lead">
-          Established in 2017, Humanitarians Without Borders is a Victorian-based incorporated multicultural community organisation supporting migrant, refugee and culturally diverse communities in the western suburbs of Melbourne and surrounding regions.
-        </p>
-        <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px;">
-          Driven by 6 core volunteers and an extended volunteer network, we work alongside grassroots groups, faith communities and local leaders to strengthen organisational capacity, improve governance, and deliver programs that promote safety, wellbeing and social inclusion.
-        </p>
-        <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px;">
-          We are an <strong style="color: var(--brand-dark);">incorporated association registered with Consumer Affairs Victoria</strong> (Registration No. A0096166U), operating under our own rules with a current and active status.
-        </p>
-
-        <div class="mvv-grid" role="list" aria-label="Mission, Vision, and Values">
-          <div class="mvv-card" role="listitem">
-            <div class="mvv-card__label">Our Mission</div>
-            <p>To empower multicultural communities with the tools, partnerships and support they need to build sustainable futures.</p>
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about__grid">
+        <!-- Photo collage (hidden on mobile) -->
+        <div class="about__photos" aria-hidden="true">
+          <div class="about__photo about__photo--1">
+            <img src="IMG_6065.jpg" alt="Community volunteers wrapping gifts" loading="lazy" />
           </div>
-          <div class="mvv-card mvv-card--accent" role="listitem">
-            <div class="mvv-card__label">Our Vision</div>
-            <p>Connected communities where every family feels supported, valued and equipped to succeed.</p>
+          <div class="about__photo about__photo--2">
+            <img src="IMG_6064.jpg" alt="Team posing with wrapped gifts" loading="lazy" />
           </div>
-          <div class="mvv-card mvv-card--full" role="listitem">
-            <div class="mvv-card__label">Our Values</div>
-            <div class="about__values" aria-label="Core values">
-              <span class="about__value-chip">Inclusion</span>
-              <span class="about__value-chip">Dignity</span>
-              <span class="about__value-chip">Collaboration</span>
-              <span class="about__value-chip">Integrity</span>
-              <span class="about__value-chip">Community Leadership</span>
-              <span class="about__value-chip">Accountability</span>
+          <div class="about__photo about__photo--3">
+            <img src="IMG_6062.jpg" alt="Stack of wrapped Christmas presents" loading="lazy" />
+          </div>
+          <div class="about__accent" aria-hidden="true"></div>
+        </div>
+
+        <!-- Text content -->
+        <div>
+          <span class="tag">Who We Are</span>
+          <h2 class="section-title" id="about-heading">A Community Organisation Built for Communities</h2>
+          <p class="section-lead">
+            Established in 2017, Humanitarians Without Borders is a Victorian-based incorporated multicultural community
+            organisation supporting migrant, refugee and culturally diverse communities in the western suburbs of
+            Melbourne and surrounding regions.
+          </p>
+          <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px;">
+            Driven by 6 core volunteers and an extended volunteer network, we work alongside grassroots groups, faith
+            communities and local leaders to strengthen organisational capacity, improve governance, and deliver
+            programs that promote safety, wellbeing and social inclusion.
+          </p>
+          <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px;">
+            We are an <strong style="color: var(--brand-dark);">incorporated association registered with Consumer
+              Affairs Victoria</strong> (Registration No. A0096166U), operating under our own rules with a current and
+            active status.
+          </p>
+
+          <div class="mvv-grid" role="list" aria-label="Mission, Vision, and Values">
+            <div class="mvv-card" role="listitem">
+              <div class="mvv-card__label">Our Mission</div>
+              <p>To empower multicultural communities with the tools, partnerships and support they need to build
+                sustainable futures.</p>
+            </div>
+            <div class="mvv-card mvv-card--accent" role="listitem">
+              <div class="mvv-card__label">Our Vision</div>
+              <p>Connected communities where every family feels supported, valued and equipped to succeed.</p>
+            </div>
+            <div class="mvv-card mvv-card--full" role="listitem">
+              <div class="mvv-card__label">Our Values</div>
+              <div class="about__values" aria-label="Core values">
+                <span class="about__value-chip">Inclusion</span>
+                <span class="about__value-chip">Dignity</span>
+                <span class="about__value-chip">Collaboration</span>
+                <span class="about__value-chip">Integrity</span>
+                <span class="about__value-chip">Community Leadership</span>
+                <span class="about__value-chip">Accountability</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      PROGRAMS / WHAT WE DO
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section section--alt" id="programs" aria-labelledby="programs-heading">
-  <div class="container">
-    <div class="services__header">
-      <span class="tag">What We Do</span>
-      <h2 class="section-title" id="programs-heading">Programs That Transform Lives</h2>
-      <p class="section-lead">
-        From governance mentoring to youth leadership and emergency relief, our programs address the full spectrum of community needs.
-      </p>
+  <section class="section section--alt" id="programs" aria-labelledby="programs-heading">
+    <div class="container">
+      <div class="services__header">
+        <span class="tag">What We Do</span>
+        <h2 class="section-title" id="programs-heading">Programs That Transform Lives</h2>
+        <p class="section-lead">
+          From governance mentoring to youth leadership and emergency relief, our programs address the full spectrum of
+          community needs.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <article class="service-card" data-aos data-aos-delay="100">
+          <div class="service-card__icon-wrap">
+            <div class="service-card__icon service-card__icon--green" aria-hidden="true">🌟</div>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Youth &amp; Family Programs</h3>
+            <p class="service-card__desc">
+              Helping young people build confidence, stay engaged and develop positive community connections.
+            </p>
+            <ul class="service-card__list" aria-label="Youth and family program services">
+              <li>Youth leadership &amp; mentoring</li>
+              <li>Crime prevention &amp; early intervention</li>
+              <li>Cultural identity &amp; belonging workshops</li>
+              <li>Skills development</li>
+              <li>Music, arts &amp; engagement activities</li>
+              <li>Family support &amp; referrals</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card" data-aos data-aos-delay="200">
+          <div class="service-card__icon-wrap">
+            <div class="service-card__icon service-card__icon--amber" aria-hidden="true">🤝</div>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Humanitarian &amp; Community Support</h3>
+            <p class="service-card__desc">
+              Connecting families to the services, spaces and support they need to settle and thrive.
+            </p>
+            <ul class="service-card__list" aria-label="Humanitarian support services">
+              <li>Emergency relief &amp; referrals</li>
+              <li>Community events</li>
+              <li>Settlement support</li>
+              <li>Linking families to services</li>
+              <li>Faith &amp; culturally safe spaces</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="services__grid">
-      <!-- Card 1 -->
-      <article class="service-card" data-aos>
-        <div class="service-card__icon-wrap">
-          <div class="service-card__icon service-card__icon--blue" aria-hidden="true">🏛️</div>
-        </div>
-        <div class="service-card__body">
-          <h3 class="service-card__title">Capacity Building for Community Organisations</h3>
-          <p class="service-card__desc">
-            We support small and emerging multicultural groups to become sustainable, compliant and impactful.
-          </p>
-          <ul class="service-card__list" aria-label="Capacity building services">
-            <li>Governance mentoring</li>
-            <li>Policies &amp; procedures development</li>
-            <li>Grant writing support</li>
-            <li>Partnership brokering</li>
-            <li>Volunteer coordination</li>
-            <li>Program design</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="service-card" data-aos data-aos-delay="100">
-        <div class="service-card__icon-wrap">
-          <div class="service-card__icon service-card__icon--green" aria-hidden="true">🌟</div>
-        </div>
-        <div class="service-card__body">
-          <h3 class="service-card__title">Youth &amp; Family Programs</h3>
-          <p class="service-card__desc">
-            Helping young people build confidence, stay engaged and develop positive community connections.
-          </p>
-          <ul class="service-card__list" aria-label="Youth and family program services">
-            <li>Youth leadership &amp; mentoring</li>
-            <li>Crime prevention &amp; early intervention</li>
-            <li>Cultural identity &amp; belonging workshops</li>
-            <li>Skills development</li>
-            <li>Music, arts &amp; engagement activities</li>
-            <li>Family support &amp; referrals</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="service-card" data-aos data-aos-delay="200">
-        <div class="service-card__icon-wrap">
-          <div class="service-card__icon service-card__icon--amber" aria-hidden="true">🤝</div>
-        </div>
-        <div class="service-card__body">
-          <h3 class="service-card__title">Humanitarian &amp; Community Support</h3>
-          <p class="service-card__desc">
-            Connecting families to the services, spaces and support they need to settle and thrive.
-          </p>
-          <ul class="service-card__list" aria-label="Humanitarian support services">
-            <li>Emergency relief &amp; referrals</li>
-            <li>Community events</li>
-            <li>Settlement support</li>
-            <li>Linking families to services</li>
-            <li>Faith &amp; culturally safe spaces</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      COMMUNITY CARE / FOOD PANTRY
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section" id="community-care" aria-labelledby="care-heading">
-  <div class="container">
-    <div class="care__grid">
-      <div class="care__image" aria-hidden="true">
-        <img src="IMG_6063.jpg" alt="Hundreds of wrapped Christmas gifts collected by the community" loading="lazy" />
-        <div class="care__image-badge" role="img" aria-label="Community pantry: serving families with dignity">
-          <div class="care__image-badge-icon" aria-hidden="true">🛒</div>
-          <div class="care__image-badge-text">
-            <strong>Community Pantry</strong>
-            <span>Serving families with dignity</span>
+  <section class="section" id="community-care" aria-labelledby="care-heading">
+    <div class="container">
+      <div class="care__grid">
+        <div class="care__image" aria-hidden="true">
+          <img src="IMG_6063.jpg" alt="Hundreds of wrapped Christmas gifts collected by the community" loading="lazy" />
+          <div class="care__image-badge" role="img" aria-label="Community pantry: serving families with dignity">
+            <div class="care__image-badge-icon" aria-hidden="true">🛒</div>
+            <div class="care__image-badge-text">
+              <strong>Community Pantry</strong>
+              <span>Serving families with dignity</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="tag">Community Care</span>
+          <h2 class="section-title" id="care-heading">Food Pantry &amp; Essential Household Support</h2>
+          <p class="section-lead">
+            At Humanitarians Without Borders, we understand that stability begins with the basics.
+          </p>
+          <p
+            style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px; margin-bottom: 8px;">
+            Through our community pantry and essential goods program, we provide culturally appropriate food, household
+            supplies and everyday necessities to families experiencing financial hardship or settlement challenges.
+          </p>
+          <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-bottom: 0;">
+            <strong style="color: var(--brand-accent);">We ensure every family is welcomed with dignity, respect and
+              choice.</strong>
+          </p>
+
+          <ul class="care__list" aria-label="What we provide">
+            <li><span aria-hidden="true">🥦</span><span>Fresh and non-perishable food parcels</span></li>
+            <li><span aria-hidden="true">🌾</span><span>Culturally familiar staple foods</span></li>
+            <li><span aria-hidden="true">🧴</span><span>Personal care and hygiene products</span></li>
+            <li><span aria-hidden="true">🏠</span><span>Household essentials</span></li>
+            <li><span aria-hidden="true">👕</span><span>Clothing and seasonal items</span></li>
+          </ul>
+
+          <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="#contact" class="btn btn-primary">Request Support</a>
+            <a href="#contact" class="btn btn-outline--dark btn-outline">Donate Goods</a>
           </div>
         </div>
       </div>
-
-      <div>
-        <span class="tag">Community Care</span>
-        <h2 class="section-title" id="care-heading">Food Pantry &amp; Essential Household Support</h2>
-        <p class="section-lead">
-          At Humanitarians Without Borders, we understand that stability begins with the basics.
-        </p>
-        <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-top: 16px; margin-bottom: 8px;">
-          Through our community pantry and essential goods program, we provide culturally appropriate food, household supplies and everyday necessities to families experiencing financial hardship or settlement challenges.
-        </p>
-        <p style="color: var(--text-mid); font-size: .9375rem; line-height: 1.75; margin-bottom: 0;">
-          <strong style="color: var(--brand-accent);">We ensure every family is welcomed with dignity, respect and choice.</strong>
-        </p>
-
-        <ul class="care__list" aria-label="What we provide">
-          <li><span aria-hidden="true">🥦</span><span>Fresh and non-perishable food parcels</span></li>
-          <li><span aria-hidden="true">🌾</span><span>Culturally familiar staple foods</span></li>
-          <li><span aria-hidden="true">🧴</span><span>Personal care and hygiene products</span></li>
-          <li><span aria-hidden="true">🏠</span><span>Household essentials</span></li>
-          <li><span aria-hidden="true">👕</span><span>Clothing and seasonal items</span></li>
-        </ul>
-
-        <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
-          <a href="#contact" class="btn btn-primary">Request Support</a>
-          <a href="#contact" class="btn btn-outline--dark btn-outline">Donate Goods</a>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      IMPACT
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section section--dark" id="impact" aria-labelledby="impact-heading">
-  <div class="container">
-    <div style="text-align: center; max-width: 640px; margin: 0 auto;">
-      <span class="tag">Our Impact</span>
-      <h2 class="section-title section-title--white" id="impact-heading">Making a Measurable Difference</h2>
-      <p class="section-lead section-lead--white" style="margin: 0 auto;">
-        Since 2017, every program we deliver, every family we support, and every community group we mentor adds to a growing story of transformation across Victoria.
-      </p>
-    </div>
-
-    <div class="impact__grid" role="list">
-      <div class="impact-card" data-aos role="listitem">
-        <div class="impact-card__number" aria-label="More than 100">100+</div>
-        <div class="impact-card__title">Migrant Families Supported Annually</div>
-        <p class="impact-card__desc">Since our establishment in 2017, we have provided ongoing support, essential goods and referrals to over 100 families from migrant and refugee backgrounds each year.</p>
-      </div>
-      <div class="impact-card" data-aos data-aos-delay="100" role="listitem">
-        <div class="impact-card__number">6+</div>
-        <div class="impact-card__title">Core Volunteers &amp; Extended Network</div>
-        <p class="impact-card__desc">Our 6 core volunteers — backed by an extended community volunteer network — deliver programs across Congolese, African, Pacific Islander, South-East Asian and broader multicultural communities.</p>
-      </div>
-      <div class="impact-card" data-aos data-aos-delay="200" role="listitem">
-        <div class="impact-card__number">Active</div>
-        <div class="impact-card__title">Liberty Arena Partnership</div>
-        <p class="impact-card__desc">In partnership with Liberty Arena Church, we deliver youth mentoring, leadership development and community engagement programs — providing young people with purpose, skills and connection.</p>
-      </div>
-      <div class="impact-card" data-aos data-aos-delay="300" role="listitem">
-        <div class="impact-card__number">Early</div>
-        <div class="impact-card__title">Youth Intervention in High-Risk Areas</div>
-        <p class="impact-card__desc">Through our youth mentoring program, young participants have returned to education, developed leadership skills and increased positive community engagement — reducing risk before it escalates.</p>
-      </div>
-    </div>
-
-    <!-- Youth outcomes case study / testimonial strip -->
-    <div style="margin-top: 48px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-lg); padding: 40px 48px; display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;" role="blockquote" aria-label="Youth program outcomes">
-      <div style="font-size: 3rem; line-height: 1; color: var(--brand-secondary); font-weight: 800; flex-shrink: 0;" aria-hidden="true">"</div>
-      <div style="flex: 1; min-width: 260px;">
-        <p style="font-size: 1.0625rem; color: rgba(255,255,255,.9); line-height: 1.8; font-style: italic; margin-bottom: 20px;">
-          Through our youth mentoring and leadership programs, we have seen young people return to education, step into community leadership roles, and actively choose positive pathways — demonstrating the real, lasting impact that early intervention and cultural connection can achieve.
+  <section class="section section--dark" id="impact" aria-labelledby="impact-heading">
+    <div class="container">
+      <div style="text-align: center; max-width: 640px; margin: 0 auto;">
+        <span class="tag">Our Impact</span>
+        <h2 class="section-title section-title--white" id="impact-heading">Making a Measurable Difference</h2>
+        <p class="section-lead section-lead--white" style="margin: 0 auto;">
+          Since 2017, every program we deliver, every family we support, and every community group we mentor adds to a
+          growing story of transformation across Victoria.
         </p>
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 40px; height: 2px; background: var(--brand-secondary); border-radius: 2px;"></div>
-          <span style="font-size: .8125rem; font-weight: 700; color: var(--brand-secondary); text-transform: uppercase; letter-spacing: .08em;">Youth Program Outcomes — Western Victoria</span>
+      </div>
+
+      <div class="impact__grid" role="list">
+        <div class="impact-card" data-aos role="listitem">
+          <div class="impact-card__number" aria-label="More than 100">100+</div>
+          <div class="impact-card__title">Migrant Families Supported Annually</div>
+          <p class="impact-card__desc">Since our establishment in 2017, we have provided ongoing support, essential
+            goods and referrals to over 100 families from migrant and refugee backgrounds each year.</p>
+        </div>
+        <div class="impact-card" data-aos data-aos-delay="100" role="listitem">
+          <div class="impact-card__number">6+</div>
+          <div class="impact-card__title">Core Volunteers &amp; Extended Network</div>
+          <p class="impact-card__desc">Our 6 core volunteers — backed by an extended community volunteer network —
+            deliver programs across Congolese, African, Pacific Islander, South-East Asian and broader multicultural
+            communities.</p>
+        </div>
+        <div class="impact-card" data-aos data-aos-delay="200" role="listitem">
+          <div class="impact-card__number">Active</div>
+          <div class="impact-card__title">Liberty Arena Partnership</div>
+          <p class="impact-card__desc">In partnership with Liberty Arena Church, we deliver youth mentoring, leadership
+            development and community engagement programs — providing young people with purpose, skills and connection.
+          </p>
+        </div>
+        <div class="impact-card" data-aos data-aos-delay="300" role="listitem">
+          <div class="impact-card__number">Early</div>
+          <div class="impact-card__title">Youth Intervention in High-Risk Areas</div>
+          <p class="impact-card__desc">Through our youth mentoring program, young participants have returned to
+            education, developed leadership skills and increased positive community engagement — reducing risk before it
+            escalates.</p>
         </div>
       </div>
-    </div>
 
-    <div class="impact__cta">
-      <a href="#contact" class="btn btn-secondary">Partner With Us to Expand Our Impact</a>
-    </div>
-  </div>
-</section>
+      <!-- Youth outcomes case study / testimonial strip -->
+      <div
+        style="margin-top: 48px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-lg); padding: 40px 48px; display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;"
+        role="blockquote" aria-label="Youth program outcomes">
+        <div style="font-size: 3rem; line-height: 1; color: var(--brand-secondary); font-weight: 800; flex-shrink: 0;"
+          aria-hidden="true">"</div>
+        <div style="flex: 1; min-width: 260px;">
+          <p
+            style="font-size: 1.0625rem; color: rgba(255,255,255,.9); line-height: 1.8; font-style: italic; margin-bottom: 20px;">
+            Through our youth mentoring and leadership programs, we have seen young people return to education, step
+            into community leadership roles, and actively choose positive pathways — demonstrating the real, lasting
+            impact that early intervention and cultural connection can achieve.
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 40px; height: 2px; background: var(--brand-secondary); border-radius: 2px;"></div>
+            <span
+              style="font-size: .8125rem; font-weight: 700; color: var(--brand-secondary); text-transform: uppercase; letter-spacing: .08em;">Youth
+              Program Outcomes — Western Victoria</span>
+          </div>
+        </div>
+      </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+      <div class="impact__cta">
+        <a href="#contact" class="btn btn-secondary">Partner With Us to Expand Our Impact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
      GALLERY
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section section--alt" id="gallery" aria-labelledby="gallery-heading">
-  <div class="container">
-    <div class="gallery__header">
-      <span class="tag">Our Community</span>
-      <h2 class="section-title" id="gallery-heading">Moments of Connection</h2>
-      <p class="section-lead" style="margin: 0 auto;">
-        See our volunteers and community members coming together to make a difference.
-      </p>
-    </div>
-
-    <div class="gallery__grid" role="list" aria-label="Community photo gallery">
-      <div class="gallery__item" role="listitem">
-        <img src="IMG_6065.jpg" alt="Diverse group of volunteers and community members holding wrapped Christmas gifts, smiling together at Wyndham Health" loading="lazy" />
-        <div class="gallery__overlay" aria-hidden="true">Christmas Gift Drive — Team Celebration</div>
-      </div>
-      <div class="gallery__item" role="listitem">
-        <img src="IMG_6064.jpg" alt="Blossom team members in purple shirts and Santa hats posing together" loading="lazy" />
-        <div class="gallery__overlay" aria-hidden="true">Blossom Team — Community Partners</div>
-      </div>
-      <div class="gallery__item" role="listitem">
-        <img src="IMG_6062.jpg" alt="First large collection of wrapped Christmas gifts piled on a table" loading="lazy" />
-        <div class="gallery__overlay" aria-hidden="true">Gift Drive Collection — Day 1</div>
-      </div>
-      <div class="gallery__item" role="listitem">
-        <img src="IMG_6063.jpg" alt="Second even larger collection of wrapped Christmas gifts covering a table and the floor" loading="lazy" />
-        <div class="gallery__overlay" aria-hidden="true">Gift Drive Collection — Final Haul</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     PARTNERS
-════════════════════════════════════════════════════════════════════ -->
-<section class="section" id="partners" aria-labelledby="partners-heading">
-  <div class="container">
-    <div class="partners__header">
-      <span class="tag">Our Partners</span>
-      <h2 class="section-title" id="partners-heading">Stronger Together</h2>
-      <p class="section-lead" style="margin: 0 auto;">
-        We work in active partnership with community organisations, faith groups and volunteer networks — combining our expertise to deliver greater impact for families across western Victoria.
-      </p>
-    </div>
-
-    <!-- Liberty Arena featured partnership -->
-    <div style="background: var(--brand-light); border: 2px solid var(--brand-primary); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 32px; display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center;" data-aos role="article" aria-label="Liberty Arena partnership">
-      <div style="width: 72px; height: 72px; border-radius: var(--radius-sm); background: rgba(13,122,122,.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;" aria-hidden="true">🥊</div>
-      <div>
-        <div style="font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--brand-primary); margin-bottom: 6px;">Key Community Partnership</div>
-        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px; letter-spacing: -.02em;">Liberty Arena Church</h3>
-        <p style="font-size: .9375rem; color: var(--text-mid); line-height: 1.7;">
-          We work in partnership with Liberty Arena Church to deliver <strong style="color: var(--text-dark);">youth mentoring, leadership development, and community engagement programs</strong> — creating safe, culturally supportive spaces where young people can build identity, skills and a positive future.
+  <section class="section section--alt" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="gallery__header">
+        <span class="tag">Our Community</span>
+        <h2 class="section-title" id="gallery-heading">Moments of Connection</h2>
+        <p class="section-lead" style="margin: 0 auto;">
+          See our volunteers and community members coming together to make a difference.
         </p>
       </div>
-    </div>
 
-    <div class="partners__grid" role="list">
-      <div class="partner-card" data-aos role="listitem">
-        <div class="partner-card__icon" aria-hidden="true">🌍</div>
-        <div class="partner-card__name">Congolese Society of Victoria</div>
-        <div class="partner-card__type">Cultural Community Organisation</div>
-      </div>
-      <div class="partner-card" data-aos data-aos-delay="100" role="listitem">
-        <div class="partner-card__icon" aria-hidden="true">🕊️</div>
-        <div class="partner-card__name">Faith &amp; Community Leaders</div>
-        <div class="partner-card__type">Local Leadership Networks</div>
-      </div>
-      <div class="partner-card" data-aos data-aos-delay="200" role="listitem">
-        <div class="partner-card__icon" aria-hidden="true">🙌</div>
-        <div class="partner-card__name">Extended Volunteer Network</div>
-        <div class="partner-card__type">6+ Core Volunteers &amp; Community Support</div>
-      </div>
-      <div class="partner-card" data-aos data-aos-delay="300" role="listitem">
-        <div class="partner-card__icon" aria-hidden="true">🏛️</div>
-        <div class="partner-card__name">Consumer Affairs Victoria</div>
-        <div class="partner-card__type">Incorporated Association — A0096166U</div>
+      <div class="gallery__grid" role="list" aria-label="Community photo gallery">
+        <div class="gallery__item" role="listitem">
+          <img src="IMG_6065.jpg"
+            alt="Diverse group of volunteers and community members holding wrapped Christmas gifts, smiling together at Wyndham Health"
+            loading="lazy" />
+          <div class="gallery__overlay" aria-hidden="true">Christmas Gift Drive — Team Celebration</div>
+        </div>
+        <div class="gallery__item" role="listitem">
+          <img src="IMG_6064.jpg" alt="Blossom team members in purple shirts and Santa hats posing together"
+            loading="lazy" />
+          <div class="gallery__overlay" aria-hidden="true">Blossom Team — Community Partners</div>
+        </div>
+        <div class="gallery__item" role="listitem">
+          <img src="IMG_6062.jpg" alt="First large collection of wrapped Christmas gifts piled on a table"
+            loading="lazy" />
+          <div class="gallery__overlay" aria-hidden="true">Gift Drive Collection — Day 1</div>
+        </div>
+        <div class="gallery__item" role="listitem">
+          <img src="IMG_6063.jpg"
+            alt="Second even larger collection of wrapped Christmas gifts covering a table and the floor"
+            loading="lazy" />
+          <div class="gallery__overlay" aria-hidden="true">Gift Drive Collection — Final Haul</div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div style="text-align: center; margin-top: 56px;">
-      <p style="color: var(--text-mid); margin-bottom: 24px; font-size: 1rem;">
-        Interested in partnering with us to strengthen multicultural communities?
-      </p>
-      <a href="#contact" class="btn btn-primary">Become a Partner</a>
+  <!-- ═══════════════════════════════════════════════════════════════════
+     PARTNERS
+════════════════════════════════════════════════════════════════════ -->
+  <section class="section" id="partners" aria-labelledby="partners-heading">
+    <div class="container">
+      <div class="partners__header">
+        <span class="tag">Our Partners</span>
+        <h2 class="section-title" id="partners-heading">Stronger Together</h2>
+        <p class="section-lead" style="margin: 0 auto;">
+          We work in active partnership with community organisations, faith groups and volunteer networks — combining
+          our expertise to deliver greater impact for families across western Victoria.
+        </p>
+      </div>
+
+      <!-- Liberty Arena featured partnership -->
+      <div
+        style="background: var(--brand-light); border: 2px solid var(--brand-primary); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 32px; display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center;"
+        data-aos role="article" aria-label="Liberty Arena partnership">
+        <div
+          style="width: 72px; height: 72px; border-radius: var(--radius-sm); background: rgba(13,122,122,.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"
+          aria-hidden="true">🥊</div>
+        <div>
+          <div
+            style="font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--brand-primary); margin-bottom: 6px;">
+            Key Community Partnership</div>
+          <h3
+            style="font-size: 1.25rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px; letter-spacing: -.02em;">
+            Liberty Arena Church</h3>
+          <p style="font-size: .9375rem; color: var(--text-mid); line-height: 1.7;">
+            We work in partnership with Liberty Arena Church to deliver <strong style="color: var(--text-dark);">youth
+              mentoring, leadership development, and community engagement programs</strong> — creating safe, culturally
+            supportive spaces where young people can build identity, skills and a positive future.
+          </p>
+        </div>
+      </div>
+
+      <div class="partners__grid" role="list">
+        <div class="partner-card" data-aos role="listitem">
+          <div class="partner-card__icon" aria-hidden="true">🌍</div>
+          <div class="partner-card__name">Congolese Society of Victoria</div>
+          <div class="partner-card__type">Cultural Community Organisation</div>
+        </div>
+        <div class="partner-card" data-aos data-aos-delay="100" role="listitem">
+          <div class="partner-card__icon" aria-hidden="true">🕊️</div>
+          <div class="partner-card__name">Faith &amp; Community Leaders</div>
+          <div class="partner-card__type">Local Leadership Networks</div>
+        </div>
+        <div class="partner-card" data-aos data-aos-delay="200" role="listitem">
+          <div class="partner-card__icon" aria-hidden="true">🙌</div>
+          <div class="partner-card__name">Extended Volunteer Network</div>
+          <div class="partner-card__type">6+ Core Volunteers &amp; Community Support</div>
+        </div>
+        <div class="partner-card" data-aos data-aos-delay="300" role="listitem">
+          <div class="partner-card__icon" aria-hidden="true">🏛️</div>
+          <div class="partner-card__name">Consumer Affairs Victoria</div>
+          <div class="partner-card__type">Incorporated Association — A0096166U</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 56px;">
+        <p style="color: var(--text-mid); margin-bottom: 24px; font-size: 1rem;">
+          Interested in partnering with us to strengthen multicultural communities?
+        </p>
+        <a href="#contact" class="btn btn-primary">Become a Partner</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      CONTACT
 ════════════════════════════════════════════════════════════════════ -->
-<section class="section section--alt" id="contact" aria-labelledby="contact-heading">
-  <div class="container">
-    <div style="margin-bottom: 56px;">
-      <span class="tag">Get In Touch</span>
-      <h2 class="section-title" id="contact-heading">We'd Love to Hear From You</h2>
-      <p class="section-lead">
-        Whether you're looking for support, want to partner with us, volunteer, or donate — reach out and we'll get back to you.
-      </p>
-    </div>
-
-    <!-- Three contact cards -->
-    <div class="contact__cards" role="list">
-      <div class="contact__card" data-aos role="listitem">
-        <div class="contact__card-icon" aria-hidden="true">📍</div>
-        <div>
-          <div class="contact__card-label">Registered Address</div>
-          <div class="contact__card-value">Suite 1001, 1 Queens Road<br>Melbourne VIC 3004</div>
-          <div class="contact__card-sub">Australia</div>
-        </div>
+  <section class="section section--alt" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div style="margin-bottom: 56px;">
+        <span class="tag">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">We'd Love to Hear From You</h2>
+        <p class="section-lead">
+          Whether you're looking for support, want to partner with us, volunteer, or donate — reach out and we'll get
+          back to you.
+        </p>
       </div>
 
-      <div class="contact__card" data-aos data-aos-delay="100" role="listitem">
-        <div class="contact__card-icon" aria-hidden="true">📞</div>
-        <div>
-          <div class="contact__card-label">Phone</div>
-          <div class="contact__card-value">
-            <a href="tel:0499845559">0499 845 559</a>
+      <!-- Three contact cards -->
+      <div class="contact__cards" role="list">
+        <div class="contact__card" data-aos role="listitem">
+          <div class="contact__card-icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="contact__card-label">Registered Address</div>
+            <div class="contact__card-value">Suite 1001, 1 Queens Road<br>Melbourne VIC 3004</div>
+            <div class="contact__card-sub">Australia</div>
           </div>
-          <div class="contact__card-sub">Monday – Friday, 9am – 5pm AEST</div>
+        </div>
+
+        <div class="contact__card" data-aos data-aos-delay="100" role="listitem">
+          <div class="contact__card-icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="contact__card-label">Phone</div>
+            <div class="contact__card-value">
+              <a href="tel:0499845559">0499 845 559</a>
+            </div>
+            <div class="contact__card-sub">Monday – Friday, 9am – 5pm AEST</div>
+          </div>
+        </div>
+
+        <div class="contact__card" data-aos data-aos-delay="200" role="listitem">
+          <div class="contact__card-icon" aria-hidden="true">🏛️</div>
+          <div>
+            <div class="contact__card-label">Registration</div>
+            <div class="contact__card-value">Incorporated Association<br>No. A0096166U</div>
+            <div class="contact__card-sub">Registered with Consumer Affairs Victoria · Status: Current</div>
+          </div>
         </div>
       </div>
 
-      <div class="contact__card" data-aos data-aos-delay="200" role="listitem">
-        <div class="contact__card-icon" aria-hidden="true">🏛️</div>
+      <!-- Incorporated Association registration badge -->
+      <div class="contact__reg" role="note" aria-label="Incorporated Association details">
+        <div class="contact__reg-icon" aria-hidden="true">🏛️</div>
+        <div class="contact__reg-text">
+          <div class="contact__reg-label">Incorporated Association — Consumer Affairs Victoria</div>
+          <div class="contact__reg-value">Humanitarians Without Borders Incorporated &nbsp;·&nbsp; Registration No.
+            A0096166U &nbsp;·&nbsp; Status: Current</div>
+        </div>
+      </div>
+
+      <!-- CTA strip -->
+      <div class="contact__cta-strip" role="complementary" aria-label="Get involved call to action">
         <div>
-          <div class="contact__card-label">Registration</div>
-          <div class="contact__card-value">Incorporated Association<br>No. A0096166U</div>
-          <div class="contact__card-sub">Registered with Consumer Affairs Victoria · Status: Current</div>
+          <h3>Ready to get involved?</h3>
+          <p>Volunteer, donate, partner with us — every contribution strengthens multicultural communities across
+            Victoria.</p>
+        </div>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="tel:0499845559" class="btn btn-secondary">Call Us Now</a>
+          <a href="tel:0499845559" class="btn btn-outline">0499 845 559</a>
         </div>
       </div>
+
     </div>
+  </section>
 
-    <!-- Incorporated Association registration badge -->
-    <div class="contact__reg" role="note" aria-label="Incorporated Association details">
-      <div class="contact__reg-icon" aria-hidden="true">🏛️</div>
-      <div class="contact__reg-text">
-        <div class="contact__reg-label">Incorporated Association — Consumer Affairs Victoria</div>
-        <div class="contact__reg-value">Humanitarians Without Borders Incorporated &nbsp;·&nbsp; Registration No. A0096166U &nbsp;·&nbsp; Status: Current</div>
-      </div>
-    </div>
-
-    <!-- CTA strip -->
-    <div class="contact__cta-strip" role="complementary" aria-label="Get involved call to action">
-      <div>
-        <h3>Ready to get involved?</h3>
-        <p>Volunteer, donate, partner with us — every contribution strengthens multicultural communities across Victoria.</p>
-      </div>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-        <a href="tel:0499845559" class="btn btn-secondary">Call Us Now</a>
-        <a href="tel:0499845559" class="btn btn-outline">0499 845 559</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════════════════════════════ -->
-<footer role="contentinfo">
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <a href="#home" class="nav__logo" style="text-decoration: none;" aria-label="Humanitarians Without Borders - Home">
-        <div class="nav__logo-icon" aria-hidden="true" style="background: linear-gradient(135deg,#0D7A7A,#3BBFB2);">🌏</div>
-        <div class="nav__logo-text">
-          <strong style="color: var(--white);">Humanitarians Without Borders</strong>
-          <span style="color: rgba(255,255,255,.4);">Victoria, Australia</span>
-        </div>
-      </a>
-      <p>Building stronger multicultural communities across Victoria through governance support, capacity building, youth programs and humanitarian services.</p>
+  <footer role="contentinfo">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo" style="text-decoration: none;"
+          aria-label="Humanitarians Without Borders - Home">
+          <div class="nav__logo-icon" aria-hidden="true" style="background: linear-gradient(135deg,#0D7A7A,#3BBFB2);">🌏
+          </div>
+          <div class="nav__logo-text">
+            <strong style="color: var(--white);">Humanitarians Without Borders</strong>
+            <span style="color: rgba(255,255,255,.4);">Victoria, Australia</span>
+          </div>
+        </a>
+        <p>Building stronger multicultural communities across Victoria through governance support, capacity building,
+          youth programs and humanitarian services.</p>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Quick Links</div>
+        <ul class="footer__col-links" role="list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#community-care">Community Care</a></li>
+          <li><a href="#impact">Our Impact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Get Involved</div>
+        <ul class="footer__col-links" role="list">
+          <li><a href="#contact">Volunteer</a></li>
+          <li><a href="#contact">Donate</a></li>
+          <li><a href="#contact">Partner With Us</a></li>
+          <li><a href="#contact">Request Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__col-links" role="list">
+          <li><a href="tel:0499845559">0499 845 559</a></li>
+          <li><a href="#contact">Suite 1001, 1 Queens Rd<br>Melbourne VIC 3004</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div>
-      <div class="footer__col-title">Quick Links</div>
-      <ul class="footer__col-links" role="list">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#community-care">Community Care</a></li>
-        <li><a href="#impact">Our Impact</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-      </ul>
+    <div class="footer__bottom">
+      <span>© 2026 Humanitarians Without Borders Incorporated. Registration A0096166U.</span>
+      <span style="color: rgba(255,255,255,.3);">Built with ❤️ for community</span>
     </div>
+  </footer>
 
-    <div>
-      <div class="footer__col-title">Get Involved</div>
-      <ul class="footer__col-links" role="list">
-        <li><a href="#contact">Volunteer</a></li>
-        <li><a href="#contact">Donate</a></li>
-        <li><a href="#contact">Partner With Us</a></li>
-        <li><a href="#contact">Request Support</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <div class="footer__col-title">Contact</div>
-      <ul class="footer__col-links" role="list">
-        <li><a href="tel:0499845559">0499 845 559</a></li>
-        <li><a href="#contact">Suite 1001, 1 Queens Rd<br>Melbourne VIC 3004</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer__bottom">
-    <span>© 2026 Humanitarians Without Borders Incorporated. Registration A0096166U.</span>
-    <span style="color: rgba(255,255,255,.3);">Built with ❤️ for community</span>
-  </div>
-</footer>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
      JAVASCRIPT
 ════════════════════════════════════════════════════════════════════ -->
-<script>
-  // ── Nav: transparent → solid on scroll ──────────────────────────────
-  const nav = document.getElementById('mainNav');
+  <script>
+    // ── Nav: transparent → solid on scroll ──────────────────────────────
+    const nav = document.getElementById('mainNav');
 
-  function updateNav() {
-    if (window.scrollY > 60) {
-      nav.classList.remove('transparent');
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.add('transparent');
-      nav.classList.remove('scrolled');
+    function updateNav() {
+      if (window.scrollY > 60) {
+        nav.classList.remove('transparent');
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.add('transparent');
+        nav.classList.remove('scrolled');
+      }
     }
-  }
 
-  window.addEventListener('scroll', updateNav, { passive: true });
-  updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
 
-  // ── Mobile nav toggle ────────────────────────────────────────────────
-  const hamburgerBtn = document.getElementById('hamburgerBtn');
-  const mobileNav    = document.getElementById('mobileNav');
+    // ── Mobile nav toggle ────────────────────────────────────────────────
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
 
-  hamburgerBtn.addEventListener('click', () => {
-    const isOpen = mobileNav.classList.toggle('open');
-    hamburgerBtn.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  });
-
-  function closeMobileNav() {
-    mobileNav.classList.remove('open');
-    hamburgerBtn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  // Close mobile nav on Escape key
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeMobileNav();
-  });
-
-  // ── Scroll-triggered reveal animations ──────────────────────────────
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('aos-animate');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-  );
-
-  document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
-
-  // ── Smooth anchor scrolling with offset for fixed nav ───────────────
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      const offset = nav.offsetHeight + 24;
-      const top    = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
-  });
-</script>
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close mobile nav on Escape key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobileNav();
+    });
+
+    // ── Scroll-triggered reveal animations ──────────────────────────────
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('aos-animate');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+
+    // ── Smooth anchor scrolling with offset for fixed nav ───────────────
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        const offset = nav.offsetHeight + 24;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+  </script>
 
 </body>
+
 </html>
